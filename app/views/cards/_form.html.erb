@@ -1,0 +1,10 @@
+<%= form_with(model: card, url: new_card_path, method: 'get') do |form| %>
+  <div class="field">
+    <%= form.label :symbol %>
+    <%= form.text_field :symbol %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

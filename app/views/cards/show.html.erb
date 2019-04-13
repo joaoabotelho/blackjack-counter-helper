@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Symbol:</strong>
+  <%= @card.symbol %>
+</p>
+
+<p>
+  <strong>Value:</strong>
+  <%= @card.value %>
+</p>
+
+<p>
+  <strong>True value:</strong>
+  <%= @card.true_value %>
+</p>
+
+<%= link_to 'Edit', edit_card_path(@card) %> |
+<%= link_to 'Back', cards_path %>

@@ -47,14 +47,17 @@ GEM
     archive-zip (0.12.0)
       io-like (~> 0.3.0)
     arel (9.0.0)
-    autoprefixer-rails (9.5.0)
+    autoprefixer-rails (9.5.1)
       execjs
-    bindex (0.6.0)
-    bootsnap (1.4.2)
+    bindex (0.7.0)
+    bootsnap (1.4.3)
       msgpack (~> 1.0)
     bootstrap-sass (3.3.7)
       autoprefixer-rails (>= 5.2.1)
       sass (>= 3.3.4)
+    bootstrap_form (4.2.0)
+      actionpack (>= 5.0)
+      activemodel (>= 5.0)
     builder (3.2.3)
     byebug (11.0.1)
     capybara (3.16.1)
@@ -149,10 +152,11 @@ GEM
     rb-fsevent (0.10.3)
     rb-inotify (0.10.0)
       ffi (~> 1.0)
+    rb-readline (0.5.5)
     regexp_parser (1.4.0)
     ruby_dep (1.5.0)
     rubyzip (1.2.2)
-    sass (3.7.3)
+    sass (3.7.4)
       sass-listen (~> 4.0.0)
     sass-listen (4.0.0)
       rb-fsevent (~> 0.9, >= 0.9.4)
@@ -205,6 +209,7 @@ PLATFORMS
 DEPENDENCIES
   bootsnap (>= 1.1.0)
   bootstrap-sass (~> 3.3.6)
+  bootstrap_form (>= 4.2.0)
   byebug
   capybara (>= 2.15)
   chromedriver-helper
@@ -215,6 +220,7 @@ DEPENDENCIES
   pg (>= 0.18, < 2.0)
   puma (~> 3.11)
   rails (~> 5.2.2, >= 5.2.2.1)
+  rb-readline
   sass-rails (~> 5.0)
   selenium-webdriver
   spring

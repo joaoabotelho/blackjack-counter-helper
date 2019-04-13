@@ -1,0 +1,16 @@
+<%= form_with(model: play, url: new_play_path, method: 'get') do |form| %>
+  <div class="field">
+    <%= form.label :hand %>
+    <%= form.text_field :hand %>
+  </div>
+
+  <div class="field">
+    <%= form.label :dealer_hand %>
+    <%= form.number_field :dealer_hand %>
+  </div>
+  <%= hidden_field_tag 'true_count', @true_value %>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

@@ -1,1 +1,43 @@
-<h1>Home Page</h1>
+<div class="jumbotron">
+  <div class="container">
+    <%= form_tag ({ :controller => 'cards', :action => 'destroy_all' }) do%>
+      <%= submit_tag 'destroy all'%>
+    <% end %>
+    <h1>Blackjack Counter</h1>
+
+    <%= render 'cards/form', card: @card %>
+    <ul class="list-group">
+      <li class="list-group-item">
+        <span class="badge"><%= @bet %></span>
+        Bet
+      </li>
+      <li class="list-group-item">
+        <span class="badge"><%= @running_count %></span>
+        Running Count
+      </li>
+      <li class="list-group-item">
+        <span class="badge"><%= @true_value %></span>
+        True Count
+      </li>
+      <li class="list-group-item">
+        <span class="badge"><%= @left_decks %></span>
+        Missing Decks
+      </li>
+    </ul>
+  </div>
+</div>
+
+<section class="container2">
+  <div class="one">
+  <ul class="list-group">
+    <%= render @cards %>
+  </ul>
+  </div>
+  <div class="two">
+    <%= render 'plays/form', play: @play , true_count: @true_value%>
+    <ul class="list-group">
+      <%= render @plays%>
+    </ul>
+  </div>
+  </div>
+</section>
